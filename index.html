@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank | Travel Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#calculator">Trip Cost Calculator</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <h1 class="site-title">Mayank Travel Agency!</h1>
+        <p>At Mayank Travel Agency, we specialize in curating unforgettable travel experiences 
+            that cater to every traveler’s dream destination. Our mission is to make travel easy, 
+            exciting, and personalized, whether you're looking to relax on a tropical beach, 
+            explore vibrant cityscapes, or immerse yourself in rich cultural heritage. 
+           <br>
+           <br>
+            With a team of dedicated travel experts and exclusive deals, we’re here to 
+            turn your travel aspirations into reality, offering guidance and support every step of the way. 
+            Discover the world with confidence and ease when you choose Mayank Travel Agency as your 
+            travel partner.</p>
+        <h2>Your Adventure Starts Here!</h2>
+        <button onclick="location.href='#destinations'">Explore Destinations</button>
+    </header>
+
+    <!-- Featured Destinations Section -->
+    <section id="destinations">
+        <h2>Featured Destinations</h2>
+        <div class="destination-list">
+            <div class="destination">
+                <img src="paris.jpg" alt="Paris">
+                <h3>Paris, France</h3>
+                <p>The city of love and lights, rich in culture and history.</p>
+            </div>
+            <div class="destination">
+                <img src="bali.jpg" alt="Bali">
+                <h3>Bali, Indonesia</h3>
+                <p>A tropical paradise with stunning beaches and vibrant culture.</p>
+            </div>
+            <div class="destination">
+                <img src="nyc.jpg" alt="New York City">
+                <h3>New York City, USA</h3>
+                <p>The city that never sleeps, full of excitement and opportunity.</p>
+            </div>
+            <div class="destination">
+                <img src="rome.jpg" alt="Rome">
+                <h3>Rome, Italy</h3>
+                <p>The eternal city of history.</p>
+            </div>
+            <div class="destination">
+                <img src="tokyo.jpg" alt="Tokyo">
+                <h3>Tokyo, Japan</h3>
+                <p>Modern meets tradition.</p>
+            </div>
+            <div class="destination">
+                <img src="capetown.jpg" alt="Cape Town">
+                <h3>Cape Town, South Africa</h3>
+                <p>Stunning coastal views.</p>
+            </div>
+            <div class="destination">
+                <img src="sydney.jpg" alt="Sydney">
+                <h3>Sydney, Australia</h3>
+                <p>Beaches and bustling life.</p>
+            </div>
+            <div class="destination">
+                <img src="kyoto.jpg" alt="Kyoto">
+                <h3>Kyoto, Japan</h3>
+                <p>Serene temples and gardens.</p>
+            </div>
+            <div class="destination">
+                <img src="venice.jpg" alt="Venice">
+                <h3>Venice, Italy</h3>
+                <p>Canals and classic romance.</p>
+            </div>
+            <div class="destination">
+                <img src="london.jpg" alt="London">
+                <h3>London, UK</h3>
+                <p>Historic and modern charm.</p>
+            </div>
+            <div class="destination">
+                <img src="dubai.jpg" alt="Dubai">
+                <h3>Dubai, UAE</h3>
+                <p>Luxury and innovation at its peak.</p>
+            </div>
+            <div class="destination">
+                <img src="santorini.jpg" alt="Santorini">
+                <h3>Santorini, Greece</h3>
+                <p>Whitewashed beauty overlooking the sea.</p>
+            </div>
+        </div>
+    </section>
+<br>
+    <!-- Trip Cost Calculator -->
+    <section id="calculator" class="boxed-section narrow-box">
+        <h2>Trip Cost Calculator</h2>
+        <form id="tripForm">
+            <label for="destination">Choose Destination:</label>
+            <select id="destination" name="destination">
+                <option value="Paris">Paris</option>
+                <option value="Bali">Bali</option>
+                <option value="NYC">New York City</option>
+                <option value="Rome">Rome, Italy</option>
+                <option value="Tokyo">Tokyo, Japan</option>
+                <option value="Cape Town">Cape Town, South Africa</option>
+                <option value="Sydney">Sydney, Australia</option>
+                <option value="Kyoto">Kyoto, Japan</option>
+                <option value="Venice">Venice, Italy</option>
+                <option value="London">London, UK</option>
+                <option value="Dubai">Dubai, UAE</option>
+                <option value="Santorini">Santorini, Greece</option>
+            </select>
+
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" name="days" required>
+
+            <label for="persons">Number of Persons:</label>
+            <input type="number" id="persons" name="persons" required>
+
+            <button type="button" onclick="calculateTripCost()">Calculate</button>
+        </form>
+        <p id="tripResult"></p>
+    </section>
+<br>
+<br>
+    <!-- Contact Form -->
+    <section id="contact" class="boxed-section narrow-box">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" required>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+<br>
+<br>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mayank Travel Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
